@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eric Allam"]
   s.date = %q{2011-01-04}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Provides an OmniAuth Strategy for CodePath.com}
   s.email = %q{eric@envylabs.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.4.1}
-  s.summary = %q{Provides a OmniAuth Strategy for OAuth2 on CodePath.com}
+  s.summary = %q{Provides an OmniAuth Strategy for OAuth2 on CodePath.com}
   s.test_files = [
     "spec/oa-codepath_spec.rb",
     "spec/spec_helper.rb"
