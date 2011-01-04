@@ -33,6 +33,11 @@ module OmniAuth
         @data ||= MultiJson.decode(@access_token.get('/api/v1/user.json', {}, {}))['user']
       end
 
+      # memoize the client or else setting up Faraday stubs does not work
+      def client
+        @_client ||= super
+      end
+      
       def user_info
         {
           'nickname' => user_data["twitter_name"],
