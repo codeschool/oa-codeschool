@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/rubymaverick/oa-codepath}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.4.1}
   s.summary = %q{Provides a OmniAuth Strategy for OAuth2 on CodePath.com}
   s.test_files = [
     "spec/oa-codepath_spec.rb",
@@ -42,7 +42,6 @@ Gem::Specification.new do |s|
   ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then

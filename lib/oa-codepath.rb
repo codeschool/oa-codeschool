@@ -12,7 +12,7 @@ module OmniAuth
       # @param [String] client_secret the application secret as registered on Facebook
       # @option options [String] :scope ('email,offline_access') comma-separated extended permissions such as `email` and `manage_pages`
       def initialize(app, client_id = nil, client_secret = nil, options = {}, &block)
-        super(app, :coder_path, client_id, client_secret, {
+        super(app, :code_path, client_id, client_secret, {
           :site => self.class.base_uri.presence || "http://localhost:3000",
           :authorize_path => "/oauth/authorize",
           :access_token_path => "/oauth/token"

@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "oa-codepath"
   gem.homepage = "http://github.com/rubymaverick/oa-codepath"
   gem.license = "MIT"
-  gem.summary = %Q{Provides a OmniAuth Strategy for OAuth2 on CodePath.com}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Provides an OmniAuth Strategy for OAuth2 on CodePath.com}
+  gem.description = %Q{Provides an OmniAuth Strategy for CodePath.com}
   gem.email = "eric@envylabs.com"
   gem.authors = ["Eric Allam"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
