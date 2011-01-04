@@ -19,12 +19,15 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rspec",
+    ".rvmrc",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "lib/oa-codepath.rb",
+    "oa-codepath.gemspec",
     "spec/oa-codepath_spec.rb",
     "spec/spec_helper.rb"
   ]
