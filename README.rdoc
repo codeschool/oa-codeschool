@@ -2,17 +2,17 @@
 
 Include in your Gemfile:
 
-gem 'oa-codepath'
+  gem 'oa-codepath'
 
 Then in your config/initializers/omniauth.rb :
 
-Rails.application.config.middleware.use OmniAuth::Builder do
-  provider OmniAuth::Strategies::CodePath, 'client_id', 'client_secret'
-end
+  Rails.application.config.middleware.use OmniAuth::Builder do
+    provider OmniAuth::Strategies::CodePath, 'client_id', 'client_secret'
+  end
 
 By default the base_uri for code_path is set to http://localhost::3000, in different environments you may want to change it:
 
-OmniAuth::Strategies::CodePath.base_uri = "http://codepath.com"
+  OmniAuth::Strategies::CodePath.base_uri = "http://codepath.com"
 
 Then all you have to do is redirect / link to /auth/code_path and omniauth will take care of the rest
 
