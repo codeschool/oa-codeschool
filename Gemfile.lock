@@ -15,12 +15,12 @@ GEM
     multi_json (0.0.5)
     multipart-post (1.0.1)
     nokogiri (1.4.4)
-    oa-core (0.2.0.beta1)
+    oa-core (0.2.0.beta3)
       rack (~> 1.1)
-    oa-oauth (0.2.0.beta1)
+    oa-oauth (0.2.0.beta3)
       multi_json (~> 0.0.2)
       nokogiri (~> 1.4.2)
-      oa-core (= 0.2.0.beta1)
+      oa-core (= 0.2.0.beta3)
       oauth (~> 0.4.0)
       oauth2 (~> 0.1.0)
     oauth (0.4.4)
@@ -46,6 +46,6 @@ DEPENDENCIES
   bundler (~> 1.0.0)
   jeweler (~> 1.5.2)
   multi_json
-  oa-oauth (= 0.2.0.beta1)
+  oa-oauth (= 0.2.0.beta3)
   rcov
   rspec (~> 2.3.0)
