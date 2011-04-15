@@ -64,6 +64,8 @@ module OmniAuth
         })
       end
     end
+
+    CodePath = CodeSchool # for backward compatiblity
   end
 end
 
