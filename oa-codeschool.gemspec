@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Eric Allam']
   s.email       = ['eric@envylabs.com']
-  s.homepage    = 'https://github.com/rubymaverick/oa-codepath'
+  s.homepage    = 'https://github.com/envylabs/oa-codeschool'
   s.summary     = 'Provides an OmniAuth strategy for OAuth2 on CodeSchool.com'
   s.description = 'Provides an OmniAuth strategy for OAuth2 on CodeSchool.com'
   s.licenses = ['MIT']
