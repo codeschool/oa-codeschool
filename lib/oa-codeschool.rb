@@ -1,11 +1,19 @@
+begin
+  require 'active_support/core_ext/class/attribute_accessors'
+rescue
+  require 'active_support'
+end
+
+require 'omniauth/oauth'
+
 module OmniAuth
   module Strategies
-    # Authenticate to CodePath utilizing OAuth 2.0 and retrieve
+    # Authenticate to Code School utilizing OAuth 2.0 and retrieve
     # basic user information.
     #
     # @example Basic Usage
-    #   use OmniAuth::Strategies::CodePath, 'client_id', 'client_secret'
-    class CodePath < OAuth2
+    #   use OmniAuth::Strategies::CodeSchool, 'client_id', 'client_secret'
+    class CodeSchool < OAuth2
       cattr_accessor :base_uri
       # @param [Rack Application] app standard middleware application parameter
       # @param [String] client_id the application id as [registered on Facebook](http://www.facebook.com/developers/)
@@ -55,8 +63,6 @@ module OmniAuth
           'extra' => {'user_hash' => user_data}
         })
       end
-      
-      
     end
   end
 end
