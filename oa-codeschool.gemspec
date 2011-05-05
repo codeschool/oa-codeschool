@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.description = 'Provides an OmniAuth strategy for OAuth2 on CodeSchool.com'
   s.licenses = ['MIT']
 
-  s.add_runtime_dependency('omniauth', ['= 0.2.0.beta3'])
+  s.add_runtime_dependency('omniauth', ['~> 0.2.5'])
   s.add_runtime_dependency('multi_json', ['>= 0'])
   s.add_runtime_dependency('activesupport', ['>= 0'])
 
