@@ -5,7 +5,7 @@ require 'oa-codeschool/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "oa-codeschool"
-  spec.version       = OmniAuth::Strategies::VERSION
+  spec.version       = OmniAuth::Strategies::CODE_SCHOOL_VERSION
   spec.authors       = ["Eric Allam", "Olivier Lacan"]
   spec.email         = ["vendor@codeschool.com"]
   spec.summary       = %q{OAuth2 OmniAuth strategy for Code School}

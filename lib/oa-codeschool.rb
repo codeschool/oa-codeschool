@@ -25,8 +25,8 @@ module OmniAuth
       def initialize(app, client_id = nil, client_secret = nil, options = {}, &block)
         super(app, :code_path, client_id, client_secret, {
           :site => self.class.base_uri.presence || "http://localhost:3000",
-          :authorize_path => "/oauth/authorize",
-          :access_token_path => "/oauth/token"
+          :authorize_path => "/oauth2/authorize",
+          :access_token_path => "/oauth2/token"
         }, options, &block)
       end
 

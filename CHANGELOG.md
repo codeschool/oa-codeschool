@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.1.0 - unreleased
+### Changed
+- breaking change: point to new Code School `/oauth2` endpoints
+
 ## 0.0.6 - 2014-12-11
 ### Added
 - this CHANGELOG
