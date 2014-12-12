@@ -1,9 +1,9 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## unreleased
-### Fixed
-- fix initialized constant bug that caused a instant crash
+## 0.1.0 - unreleased
+### Changed
+- breaking change: point to new Code School `/oauth2` endpoints
 
 ## 0.0.6 - 2014-12-11 (yanked)
 ### Added
