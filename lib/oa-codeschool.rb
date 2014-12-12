@@ -10,8 +10,6 @@ require 'omniauth/oauth'
 
 module OmniAuth
   module Strategies
-    CodePath = CodeSchool # for backward compatiblity
-
     # Authenticate to Code School with OAuth 2.0 and retrieve basic user information.
     #
     # @example Basic Usage
@@ -67,6 +65,8 @@ module OmniAuth
         })
       end
     end
+
+    CodePath = CodeSchool # for backward compatiblity
   end
 end
 

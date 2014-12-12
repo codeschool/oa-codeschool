@@ -1,7 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## 0.0.6 - 2014-12-11
+## 0.0.7 - 2014-12-11
+### Fixed
+- fix initialized constant bug that caused a instant crash
+
+## 0.0.6 - 2014-12-11 (yanked)
 ### Added
 - this CHANGELOG
 - CONTRIBUTING file
