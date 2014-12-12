@@ -8,8 +8,7 @@ require 'omniauth/oauth'
 
 module OmniAuth
   module Strategies
-    # Authenticate to Code School utilizing OAuth 2.0 and retrieve
-    # basic user information.
+    # Authenticate to Code School with OAuth 2.0 and retrieve basic user information.
     #
     # @example Basic Usage
     #   use OmniAuth::Strategies::CodeSchool, 'client_id', 'client_secret'
