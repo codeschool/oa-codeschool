@@ -19,13 +19,13 @@ module OmniAuth
       # @param [String] client_secret the application secret as registered on Facebook
       # @option options [String] :scope ('email,offline_access') comma-separated extended permissions such as `email` and `manage_pages`
       def initialize(app, client_id = nil, client_secret = nil, options = {}, &block)
-        super(app, :code_path, client_id, client_secret, {
+        super(app, :code_school, client_id, client_secret, {
           :site => self.class.base_uri.presence || "http://localhost:3000",
           :authorize_path => "/oauth2/authorize",
           :access_token_path => "/oauth2/token"
         }, options, &block)
       end
-      
+
       def request_phase
         options[:response_type] ||= "code"
         super
@@ -44,7 +44,7 @@ module OmniAuth
       def client
         @_client ||= super
       end
-      
+
       def user_info
         {
           'nickname' => user_data["twitter_name"],
@@ -54,7 +54,7 @@ module OmniAuth
           'name' => user_data['name']
         }
       end
-      
+
       def auth_hash
         OmniAuth::Utils.deep_merge(super, {
           'uid' => user_data['id'],
