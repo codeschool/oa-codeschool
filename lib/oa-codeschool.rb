@@ -21,8 +21,8 @@ module OmniAuth
       def initialize(app, client_id = nil, client_secret = nil, options = {}, &block)
         super(app, :code_school, client_id, client_secret, {
           :site => self.class.base_uri.presence || "http://localhost:3000",
-          :authorize_path => "/oauth2/authorize",
-          :access_token_path => "/oauth2/token"
+          :authorize_url => "/oauth2/authorize",
+          :token_url => "/oauth2/token"
         }, options, &block)
       end
 
@@ -37,7 +37,7 @@ module OmniAuth
       end
 
       def user_data
-        @data ||= MultiJson.decode(@access_token.get('/api/v1/user.json', {}, {}))['user']
+        @data ||= @access_token.get('/api/v2/user.json').parsed['user']
       end
 
       # memoize the client or else setting up Faraday stubs does not work
