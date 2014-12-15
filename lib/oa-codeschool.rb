@@ -47,11 +47,10 @@ module OmniAuth
 
       def user_info
         {
-          'nickname' => user_data["twitter_name"],
-          'email' => (user_data["email"] if user_data["email"]),
-          'first_name' => user_data["name"].split(" ").first,
-          'last_name' => user_data["name"].split(" ").last,
-          'name' => user_data['name']
+          'nickname' => user_data["username"],
+          'email' => user_data["email"],
+          'name' => user_data['name'],
+          'image' => user_data['avatar']
         }
       end
 
